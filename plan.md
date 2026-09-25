@@ -1,63 +1,11 @@
-# Plan: prj-3277-task-mugt5twl
+# Plan: task-mugt5twl
 
-**Project:** `prj-2351`  
+**Project:** `PRJ-2351`  
 **Task ID:** `task-mugt5twl`  
 **Repo:** `prj-3277-task-mugt5twl`  
-
-## Summary
-
-Декомпозирую задачу на утилиту подсчёта hash файлов v2: структура проекта → реализация с поддержкой нескольких алгоритмов → CLI-интерфейс → тесты → README.
+**Progress:** 0/0 subtasks done
 
 ## Subtasks
-
-### 1. Инициализировать структуру проекта
-
-- **ID:** `sub-1`
-- **Profile:** `20razrab1`
-- **Tester:** `TBD`
-- **Status:** `pending`
-- **Description:** Создать репозиторий prj-3277-task-mugt5twl, файлы pyproject.toml, .gitignore, базовую структуру src/hash_util/ и tests/
-- **Test plan:** git clone проходит, pyproject.toml валиден, структура src/hash_util/ содержит __init__.py
-
-### 2. Реализовать core-модуль подсчёта hash
-
-- **ID:** `sub-2`
-- **Profile:** `20razrab1`
-- **Tester:** `TBD`
-- **Status:** `pending`
-- **Description:** Создать hash_util/core.py: функция compute_hash(file_path, algorithm) с поддержкой md5/sha1/sha256/sha512, обработка больших файлов чанками (8192 bytes), обработка ошибок FileNotFoundError
-- **Test plan:** compute_hash возвращает корректный hex-digest для тестового файла, обработка исключений работает
-- **Dependencies:** `sub-1`
-
-### 3. Реализовать CLI-интерфейс
-
-- **ID:** `sub-3`
-- **Profile:** `30razrab2`
-- **Tester:** `TBD`
-- **Status:** `pending`
-- **Description:** Создать hash_util/cli.py с argparse: аргументы file (позиционный), --algorithm (md5/sha1/sha256/sha512, default sha256), --recursive для директорий, форматированный вывод file: <hash>
-- **Test plan:** python -m hash_util file.txt --algorithm sha256 выводит корректный hash, --help работает, --recursive обходит директорию
-- **Dependencies:** `sub-2`
-
-### 4. Написать unit-тесты
-
-- **ID:** `sub-4`
-- **Profile:** `30razrab2`
-- **Tester:** `TBD`
-- **Status:** `pending`
-- **Description:** Создать tests/test_core.py и tests/test_cli.py с pytest: тесты для всех алгоритмов, тесты на большие файлы, тесты на исключения, тесты CLI через subprocess
-- **Test plan:** pytest выдаёт все тесты passed, покрытие core.py ≥90%
-- **Dependencies:** `sub-3`
-
-### 5. Написать README и финализировать
-
-- **ID:** `sub-5`
-- **Profile:** `20razrab1`
-- **Tester:** `TBD`
-- **Status:** `pending`
-- **Description:** Создать README.md с описанием, установкой, примерами использования, списком поддерживаемых алгоритмов, --help вывод
-- **Test plan:** README содержит все секции, примеры из README воспроизводятся
-- **Dependencies:** `sub-4`
 
 
 ---
